@@ -55,6 +55,7 @@ public class FlattenNestedListIterator_341 {
             integersList.toArray(integers);
         }
 
+        //降维操作，把所有的数值合并到一个大的数组中
         private List<Integer> resolveList(List<NestedInteger> nestedList){
             List<Integer> resultList = new ArrayList<Integer>();
             for(int i = 0; i < nestedList.size(); i++){

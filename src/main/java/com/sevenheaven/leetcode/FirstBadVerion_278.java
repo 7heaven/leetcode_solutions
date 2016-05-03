@@ -21,6 +21,7 @@ public class FirstBadVerion_278 {
         int end = n;
         int current = n >> 1;
 
+        //二分查找
         while(end != start){
             if(isBadVersion(current)){
                 end = current;
