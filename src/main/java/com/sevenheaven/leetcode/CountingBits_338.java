@@ -4,6 +4,9 @@ package com.sevenheaven.leetcode;
  * Created by 7heaven on 16/4/29.
  */
 public class CountingBits_338 {
+
+    //Hamming Weight
+
     private static final long m1 = 0x5555555555555555L;
     private static final long m2 = 0x3333333333333333L;
     private static final long m4 = 0x0f0f0f0f0f0f0f0fL;
