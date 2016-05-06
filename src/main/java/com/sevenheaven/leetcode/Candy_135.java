@@ -5,40 +5,38 @@ package com.sevenheaven.leetcode;
  */
 public class Candy_135 {
 
-    //submission运行时间17ms，远低于average level，有待优化
+    //submission运行时间15ms，远低于average level，有待优化
     public static int candy(int[] ratings) {
         boolean needSort = true;
-        int[] candies = new int[ratings.length];
+        final int[] candies = new int[ratings.length];
         int totalCandies = 0;
 
         for(int i = 0; i < ratings.length; i++) candies[i] = 1;
 
         while(needSort){
             needSort = false;
-            //正方向一次遍历
             for(int i = 1; i < ratings.length; i++){
                 if(ratings[i] > ratings[i - 1] && candies[i] <= candies[i - 1]){
                     candies[i] = candies[i - 1] + 1;
                 }
             }
 
-            //反方向一次遍历
             for(int i = ratings.length - 2; i >= 0; i--){
                 if(ratings[i] > ratings[i + 1] && candies[i] <= candies[i + 1]){
                     candies[i] = candies[i + 1] + 1;
                 }
 
-                if(i != 0){
-                    int offsetForward = ratings[i] - ratings[i + 1];
-                    int offsetBackward = ratings[i] - ratings[i - 1];
-                    int candyForward = candies[i] - candies[i + 1];
-                    int candyBackward = candies[i] - candies[i - 1];
+                if(i != 0 && !needSort){
+                    final int offsetForward = ratings[i] - ratings[i + 1];
+                    final int offsetBackward = ratings[i] - ratings[i - 1];
+                    final int candyForward = candies[i] - candies[i + 1];
+                    final int candyBackward = candies[i] - candies[i - 1];
 
                     if(offsetForward != 0){
                         if(getFirst(candyForward) != getFirst(offsetForward)) needSort = true;
                     }
 
-                    if(offsetBackward != 0){
+                    if(offsetBackward != 0 && !needSort){
                         if(getFirst(candyBackward) != getFirst(offsetBackward)) needSort = true;
                     }
                 }
