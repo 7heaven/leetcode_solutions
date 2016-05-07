@@ -5,12 +5,6 @@ package com.sevenheaven.leetcode;
  */
 public class AddTwoNumbers_2 {
 
-    public static class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x) {val = x;}
-    }
-
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         //resultNode是返回结果的根节点
         ListNode resultNode = new ListNode((l1.val + l2.val) % 10);

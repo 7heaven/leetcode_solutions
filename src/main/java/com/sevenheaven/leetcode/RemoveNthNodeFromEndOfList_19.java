@@ -5,12 +5,6 @@ package com.sevenheaven.leetcode;
  */
 public class RemoveNthNodeFromEndOfList_19 {
 
-    public static class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x) {val = x;}
-    }
-
     public static ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode recordedRemoveNode = head;
         ListNode next = head;
