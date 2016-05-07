@@ -37,7 +37,7 @@ public class StringToInteger_8 {
             result += single;
 
         }
-        
+
         return negative ? ~result + 1 : result;
     }
 }
