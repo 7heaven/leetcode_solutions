@@ -1,5 +1,7 @@
 package com.sevenheaven.leetcode;
 
+import com.sevenheaven.leetcode.associate.NestedInteger;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -8,41 +10,6 @@ import java.util.List;
  * Created by 7heaven on 16/4/30.
  */
 public class Q341_FlattenNestedListIterator {
-
-    public interface NestedInteger{
-        boolean isInteger();
-        Integer getInteger();
-        List<NestedInteger> getList();
-    }
-
-    public static class NestedIntegerImpl implements NestedInteger{
-
-        private Integer mSingleInteger;
-        private List<NestedInteger> mNestedList;
-
-        public NestedIntegerImpl(List<NestedInteger> nestedList){
-            mNestedList = nestedList;
-        }
-
-        public NestedIntegerImpl(Integer singleInteger){
-            mSingleInteger = singleInteger;
-        }
-
-        @Override
-        public boolean isInteger(){
-            return mSingleInteger != null;
-        }
-
-        @Override
-        public Integer getInteger(){
-            return mSingleInteger;
-        }
-
-        @Override
-        public List<NestedInteger> getList(){
-            return mNestedList;
-        }
-    }
 
     public static class NestedIterator implements Iterator<Integer> {
         private Integer[] integers;
