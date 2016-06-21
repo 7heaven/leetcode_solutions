@@ -1,11 +1,13 @@
 package com.sevenheaven.leetcode;
 
+import com.sevenheaven.leetcode.associate.ListNode;
+
 /**
  * Created by 7heaven on 16/5/7.
  */
 public class Q21_MergeTwoSortedLists {
 
-    public static com.sevenheaven.leetcode.associate.ListNode mergeTwoLists(com.sevenheaven.leetcode.associate.ListNode l1, com.sevenheaven.leetcode.associate.ListNode l2) {
+    public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         if(l1 == null && l2 == null){
             return null;
         }else if(l1 == null){
@@ -14,10 +16,10 @@ public class Q21_MergeTwoSortedLists {
             return l1;
         }
 
-        com.sevenheaven.leetcode.associate.ListNode head = l1.val > l2.val ? l2 : l1;
-        com.sevenheaven.leetcode.associate.ListNode next = head;
-        com.sevenheaven.leetcode.associate.ListNode l1i = head == l1 ? l1.next : l1;
-        com.sevenheaven.leetcode.associate.ListNode l2i = head == l2 ? l2.next : l2;
+        ListNode head = l1.val > l2.val ? l2 : l1;
+        ListNode next = head;
+        ListNode l1i = head == l1 ? l1.next : l1;
+        ListNode l2i = head == l2 ? l2.next : l2;
         while(l1i != null && l2i != null){
 
             if(l1i.val > l2i.val){

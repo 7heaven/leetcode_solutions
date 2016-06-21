@@ -1,16 +1,18 @@
 package com.sevenheaven.leetcode;
 
+import com.sevenheaven.leetcode.associate.ListNode;
+
 /**
  * Created by 7heaven on 16/5/8.
  */
 public class Q24_SwapNodesInPairs {
-    public static com.sevenheaven.leetcode.associate.ListNode swapPairs(com.sevenheaven.leetcode.associate.ListNode head) {
+    public static ListNode swapPairs(ListNode head) {
         boolean swap = true;
-        com.sevenheaven.leetcode.associate.ListNode walk = head;
-        com.sevenheaven.leetcode.associate.ListNode latest = null;
+        ListNode walk = head;
+        ListNode latest = null;
         while(walk != null){
             if(swap){
-                com.sevenheaven.leetcode.associate.ListNode tmp;
+                ListNode tmp;
                 if(walk.next != null){
                     tmp = walk.next;
                     if(walk == head) head = tmp;
