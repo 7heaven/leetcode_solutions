@@ -1,8 +1,10 @@
 package com.sevenheaven.leetcode;
 
+import java.util.ArrayList;
+
 public class Q299_BullsAndCows {
-    private ArrayList<Character> secretCache = new ArrayList<Character>();
-    private ArrayList<Character> guessCache = new ArrayList<Character>();
+    private static ArrayList<Character> secretCache = new ArrayList<Character>();
+    private static ArrayList<Character> guessCache = new ArrayList<Character>();
     
     public static String getHint(String secret, String guess) {
         if(secret.length() == guess.length()){
