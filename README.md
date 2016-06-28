@@ -44,5 +44,5 @@ Keep updating…...
 | 344  | [Reverse String](./src/main/java/com/sevenheaven/leetcode/Q344_ReverseString.java) |   Easy    | [link](https://leetcode.com/problems/reverse-string) |   3ms    | 61.06% |          |
 | 345  | [Reverse Vowels of a String](./src/main/java/com/sevenheaven/leetcode/Q345_ReverseVowelsOfString.java) |   Easy    | [link](https://leetcode.com/problems/reverse-vowels-of-a-string) |   7ms    | 65.73% |          |
 | 347  | [Top K Frequent Elements](./src/main/java/com/sevenheaven/leetcode/Q347_TopKFrequentElements.java) |  Medium   | [link](https://leetcode.com/problems/top-k-frequent-elements) |  355ms   | 0.52%  | lame!!!! |
-| 369  | [Plus One Linked List](./src/main/java/com/sevenheaven/Q369_PlusOneLinkedList.java) |  Medium   | [link](https://leetcode.com/problems/plus-one-linked-list/) |   1ms    |  NaN   |          |
+| 369  | [Plus One Linked List](./src/main/java/com/sevenheaven/leetcode/Q369_PlusOneLinkedList.java) |  Medium   | [link](https://leetcode.com/problems/plus-one-linked-list/) |   1ms    |  NaN   |          |
 
